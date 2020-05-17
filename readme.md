@@ -62,3 +62,16 @@ git commit的反向命令git reset HEAD，就是把仓库最新版本转移到�
 
 `git restore --worktree <file>`	暂存区覆盖工作区
 `git restore --staged <file>`	master覆盖暂存区
+
+# 远程仓库
+
+## 接入
+
+### 创建SSH Key
+`ssh-keygen -t rsa -C "youremail@example.com"`
+主目录下会生成.ssh目录
+id_rsa		私钥
+id_rsa.pub	公钥
+
+### 上传公钥
+在github/Account settings/SSH Keys中填入

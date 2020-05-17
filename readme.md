@@ -70,8 +70,25 @@ git commit的反向命令git reset HEAD，就是把仓库最新版本转移到�
 ### 创建SSH Key
 `ssh-keygen -t rsa -C "youremail@example.com"`
 主目录下会生成.ssh目录
-id_rsa		私钥
-id_rsa.pub	公钥
+id\_rsa		私钥
+id\_rsa.pub	公钥
 
 ### 上传公钥
 在github/Account settings/SSH Keys中填入
+
+
+## 添加远程库
+
+### 关联远程库
+`git remote add origin git@server-name:path/repo-name.git`
+
+### 第一次推送
+`git push -u origin master`
+
+### 后续推送
+`git push origin master`
+
+## 克隆远程库
+
+### 克隆
+` git clone git@github.com:michaelliao/gitskills.git`
